@@ -1,0 +1,10 @@
+1) Principal Component Analysis
+2) Tried simple classifiers
+	a) Logistic Regression
+	b) Linear SVM
+	c) Kernel SVM 
+	d) Decision Trees
+	e) kNN
+	f) Random Forests
+3) Need to look at FEAST to implement feature selection
+4) Also try XGBoost
