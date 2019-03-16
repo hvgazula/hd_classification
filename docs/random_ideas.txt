@@ -8,3 +8,4 @@
 	f) Random Forests
 3) Need to look at FEAST to implement feature selection
 4) Also try XGBoost
+5) Logistic regression with L1, L2, elastic net regularization?
