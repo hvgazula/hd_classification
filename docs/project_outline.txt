@@ -1,3 +1,28 @@
 # Initial Draft for HD data classification
 
 # Outline written by Anna Bonkhoff
+
+Sample characteristics: 261 subjects:
+183 genetically determined HD patients (23 with manifest disease), 78 healthy controls
+
+Espinoza et al., 2018: The data consisted of a total of 261 participants (183 HDgmc [53 M/130 F] and 78 HCs [25 M/ 53F]). HDgmc participants were between the ages of 19 and 79 (mean age = 42.48 years and standard devia- tion = 12.82 years) and HC individuals were between the ages of 25 and 69 (mean age = 48.59 years and standard de- viation = 11.35 years).
+
+Resting state parameters (Siemens Magnetom TrioTim scanners): T2*-weighted functional gradient-echo echo-planar images were acquired with the following parameters: voxel size = 2.0 · 2.0 · 4.0 mm3; repetition time = 2800 msec; echo time = 29 msec; flip angle (FA) = 80°; field of view = 256 · 256 mm2; matrix = 128 · 128, slice thickness = 4 mm, gap = 0 or 0.5 mm, and number of slices = 31 interleaved axial oblique. Resting-state scans lasted 6 min, 15 sec (132 volumes).
+
+Prediction target: HD vs non-HD (binarized)
+
+Input features: Obtained from different stages of the static and dynamic connectivity pipelines
+(- individual timecourses directly after back-reconstruction)
+- individual static connectivity values
+- individual dynamic connectivity values before k-means
+- individual dynamic connectivity values averaged per k-means cluster (if applicabel in combination with treating window length as hyperparameter)
+- derived values after dFNC and k-means, e.g. individual dwell time per state
+
+Methods:
+- variety of feature selection/extraction methods
+- variety of classifiers (svm with linear/polynomial etc kernel, logistic regression w/different regularizations, tree-based algorithms, kNN) in combination with hyperparameter optimization and nested cross-validation (if possible 5-10-fold)
+- if possible: combine with interpretability, e.g via feature importances of random forests/gradient boosting (however, limited validity due to discriminative nature of these classifiers) or in the LIME framework (https://arxiv.org/abs/1602.04938, https://github.com/marcotcr/lime)
+- performance measure: F1-Score, AUC
+
+Important to keep in mind: How to handle group inbalance?
+
