@@ -17,6 +17,8 @@ Input features: Obtained from different stages of the static and dynamic connect
 - individual dynamic connectivity values before k-means
 - individual dynamic connectivity values averaged per k-means cluster (if applicabel in combination with treating window length as hyperparameter)
 - derived values after dFNC and k-means, e.g. individual dwell time per state
+- to be discussed: How to handle covariates (age, gender, motion) - simply regressing out might not be the best way, if we use non-linear classifiers!
+- also to be discussed: Focus on motor components as HD is characterized predominantly by motor symptoms?!
 
 Methods:
 - variety of feature selection/extraction methods
