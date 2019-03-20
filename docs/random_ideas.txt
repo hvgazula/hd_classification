@@ -1,11 +1,15 @@
-1) Principal Component Analysis
+1) Principal Component Analysis (selected 150 components 95% variance).
+	The following classifiers didn't seem to do well at all
 2) Tried simple classifiers
 	a) Logistic Regression
 	b) Linear SVM
-	c) Kernel SVM 
-	d) Decision Trees
+	c) Kernel SVM (RBF)
+	d) Decision Trees (I forgot this)
 	e) kNN
 	f) Random Forests
-3) Need to look at FEAST to implement feature selection
-4) Also try XGBoost
+3) Implemented feature selection using FEAST.
+4) Also try XGBoost?
 5) Logistic regression with L1, L2, elastic net regularization?
+6) Selected patients so the classes are balanced
+7) Question about double dipping (feature selection and then principal component analysis)
+8) Picking RBF SVM based on initial assessment on F1 plots and need to tune the hyperparameters
