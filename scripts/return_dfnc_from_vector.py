@@ -30,7 +30,7 @@ def return_dfnc_from_vector(a):
     l_indices = np.tril_indices(n, -1)
     u_indices = np.triu_indices(n, 1)
 
-    out[l_indices] = a
-    out[u_indices] = out.T[u_indices]
+    out[u_indices] = a
+    out[l_indices] = out.T[l_indices]
     
     return out
