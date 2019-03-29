@@ -23,3 +23,10 @@ S 27
 SC 28 - 29
 SM 30 - 34
 VIS 35 - 45
+
+Idea 01: Hierarchical modeling on the individual domains (question from victor: how to account for interactions)
+Idea 02: Fitting a classifier on the dfnc windows across subjects (for each time point) and then doing an argmax on the 
+predicted labels from each classifier
+Idea 03: Fitting a classifier on the dfnc windows across subjects (for each time point) and then stack the predicted labels.
+Fit another classifer on the stacked dataset and that will be final predicted labels. 
+
