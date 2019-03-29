@@ -13,3 +13,13 @@
 6) Selected patients so the classes are balanced
 7) Question about double dipping (feature selection and then principal component analysis)
 8) Picking RBF SVM based on initial assessment on F1 plots and need to tune the hyperparameters
+9) Network rows:
+
+AUD 0 - 2
+CB 3 - 4
+CC 5 - 11
+DMN 12 - 26
+S 27
+SC 28 - 29
+SM 30 - 34
+VIS 35 - 45
