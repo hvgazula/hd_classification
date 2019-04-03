@@ -32,3 +32,4 @@ predicted labels from each classifier
 Idea 03: Fitting a classifier on the dfnc windows across subjects (for each time point) and then stack the predicted labels.
 Fit another classifer on the stacked dataset and that will be final predicted labels. 
 
+Idea 04 (somewhat orthogonal): Split HD group in half based on Langbehn model and build two prediction models (would establish approx. balanced groups) --> Mason et al. (Annals of Neurology, 2018): "The preHD group was median-split into preHD-near and preHD-far subgroups according to their estimated years to clin- ical diagnosis score calculated using the Langbehn model (CAG repeat length and age). 
