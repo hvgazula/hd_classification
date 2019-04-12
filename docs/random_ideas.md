@@ -33,3 +33,10 @@ Idea 03: Fitting a classifier on the dfnc windows across subjects (for each time
 Fit another classifer on the stacked dataset and that will be final predicted labels. 
 
 Idea 04 (somewhat orthogonal): Split HD group in half based on Langbehn model and build two prediction models (would establish approx. balanced groups) --> Mason et al. (Annals of Neurology, 2018): "The preHD group was median-split into preHD-near and preHD-far subgroups according to their estimated years to clin- ical diagnosis score calculated using the Langbehn model (CAG repeat length and age). 
+
+Discussion on 04/11/2019:
+Victor wants 
+1) To compare HC and Early/Low/Near (based on cap_d_Scores). The expectation is no significant differences
+resulting in a classifier performance of ~50%.
+2) To compare HC and High (based on cap_d_score). The expectation is there will be significant differences resulting in a higher accuracy.
+
